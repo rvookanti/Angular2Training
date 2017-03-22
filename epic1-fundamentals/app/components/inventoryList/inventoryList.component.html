@@ -1,0 +1,9 @@
+<div>Hey this is my first template to display the inventory</div>
+
+<div *ngFor="let item of getItems()"  >
+    <span (click)="setCurrentItem(item)">{{item.name}}</span>
+</div>
+
+<div *ngIf="currentItem">
+    <span>{{currentItem.name}}</span>
+</div>
